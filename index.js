@@ -1,4 +1,4 @@
-var noNecesita = false;
+console.log('en js')
 
 function destinoCambio(event) {
     var destino = event.target.value;
