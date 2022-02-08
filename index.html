@@ -4,8 +4,24 @@
     </head>
     <body>
         <h1>Viajes y pedido de pases</h1>
-        <input id="destinoId" type="combobox" label="Destino:">
-        <input id="origenId" type="combobox" label="Origen:">
-
+        <input id="destinoId" list="destinos" name="destinos" label="Destino:">
+        <datalist id="destinos">
+            <option value="CABA">
+            <option value="La costa">
+            <option value="tu casa">
+            <option value="Niarnia">
+            <option value="Hogwarts">
+        </datalist>
+        <input id="origenId" list="origen" name="origen" label="Origen:">
+        <datalist id="origen">
+            <option value="CABA">
+            <option value="La costa">
+            <option value="tu casa">
+            <option value="Niarnia">
+            <option value="Hogwarts">
+        </datalist>
+        <template if:true={noNecesita}>
+            No necesita pase
+        </template>
     </body>
 </html>
