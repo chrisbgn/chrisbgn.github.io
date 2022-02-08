@@ -1,9 +1,8 @@
-var noNecesita = false;
-
 function destinoCambio(event) {
     var destino = event.target.value;
+    console.log('destino >>> ', destino);
     if(destino == 'CABA'){
-        noNecesita = true;
+        console.log('adentro del if el peluca sapbeeee');
         alert('No necesitas presentar el pase sapbeeeeee');
     }
 }
