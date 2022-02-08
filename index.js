@@ -5,7 +5,7 @@ function destinoCambio(value) {
     if(value == 'CABA'){
         console.log('adentro del if el peluca sapbeeee');
         alert('No necesitas presentar el pase sapbeeeeee');
-        //var origen = document.querySelector("#origen");
-        //console.log('origen value => ', origen.value);
+        var origen = document.querySelector("#origenId");
+        console.log('origen value => ', origen.value);
     }
 }
