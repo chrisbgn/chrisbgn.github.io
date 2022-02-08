@@ -1,8 +1,9 @@
-console.log('en js')
-
-function destinoCambio(event) {
-    var destino = event.target.value;
-    if(destino == 'CABA'){
-        noNecesita = true;
+console.log('leyendo js');
+function destinoCambio(value) {
+    console.log('dentro de la funcion');
+    console.log('destino >>> ', value);
+    if(value == 'CABA'){
+        console.log('adentro del if el peluca sapbeeee');
+        alert('No necesitas presentar el pase sapbeeeeee');
     }
 }
