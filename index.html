@@ -9,7 +9,7 @@
         <h3>Pedime o no pedime el pase</h3>
         <div>
             <label>Destino:</label>
-            <input id="destinoId" list="destinos" name="destinos" label="Destino:" onchange="destinoCambio(this.value)">
+            <input id="destinoId" list="destinos" name="destinos" onchange="destinoCambio(this.value)">
             <datalist id="destinos">
                 <option value="CABA">
                 <option value="La costa">
@@ -18,7 +18,7 @@
                 <option value="Hogwarts">
             </datalist>
             <label>Origen:</label>
-            <input id="origenId" list="origen" name="origen" label="Origen:">
+            <input id="origenId" list="origen" name="origen" onchange="destinoCambio(this.value)">
             <datalist id="origen">
                 <option value="CABA">
                 <option value="La costa">
