@@ -10,14 +10,26 @@
                 Bienvenido, este cronometro sirve para medir el tiempo de duración de las pilas Eneloop en el mando Xbox 360    
             </div>
             <br/>
-            <div class="chronometerDisplay" style="font-family:'Segoe UI'; font-size: 36px; color: rgb(206, 226, 238)">
-                <span id="days">00 </span>:
-                <span id="hours">00 </span>:
-                <span id="minutes">00 </span>:
-                <span id="seconds">00 </span>
+            <div class="chronometerDisplay" style="font-family:'Segoe UI'; color: rgb(206, 226, 238)">
+                <table style="margin-left: auto;margin-right: auto;">
+                    <thead style="font-size: 24px;">
+                        <th style="margin: 5%;">Days</th>
+                        <th style="margin: 5%;">Hs</th>
+                        <th style="margin: 5%;">Min</th>
+                        <th style="margin: 5%;">Sec</th>
+                    </thead>
+                    <tbody style="font-size: 36px;">
+                        <tr>
+                            <td id="days">00</td>
+                            <td id="hours">00</td>
+                            <td id="minutes">00</td>
+                            <td id="seconds">00</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <br/>
-            <div class="chronometerButtons">
+            <div class="chronometerButtons" style="position: relative; top: 250px;">
                 <button id="start" onclick="handleStart()">Start</button>
                 <button id="pause" onclick="handlePause()">Pause</button>
                 <button id="stop" onclick="handleStop()">Stop</button>
