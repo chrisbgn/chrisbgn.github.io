@@ -30,28 +30,30 @@ async function handleStart() {
             document.getElementById("minutes").innerHTML = minutes;
             
             document.getElementById("seconds").innerHTML = seconds;
+            if(minutes == 59 && seconds == 59) {
+                minutes = 0;
+                var tempHr = Number(hours);
+                console.log(tempHr);
+                hours =+ (tempHr + 1).toString();
+                console.log(hours);
+                document.getElementById("hours").innerHTML = hours;
+                
+                document.getElementById("minutes").innerHTML = minutes;
+                if(minutes == 59 && seconds == 59 && hours == 23) {
+                    hours = 0
+                    var tempDay = Number(days);
+                    console.log(tempDay);
+                    days =+ (tempDay + 1).toString();
+                    console.log(days);
+                    document.getElementById("days").innerHTML = days;
+                    
+                    document.getElementById("hours").innerHTML = hours;
+                }
+            }
+            
             await sleep(1000);
         }
-        if(minutes == 59 && seconds == 59) {
-            minutes = 0;
-            var tempHr = Number(hours);
-            console.log(tempHr);
-            hours =+ (tempHr + 1).toString();
-            console.log(hours);
-            document.getElementById("hours").innerHTML = hours;
-            
-            document.getElementById("minutes").innerHTML = minutes;
-        }
-        if(minutes == 59 && seconds == 59 && hours == 23) {
-            hours = 0
-            var tempDay = Number(days);
-            console.log(tempDay);
-            days =+ (tempDay + 1).toString();
-            console.log(days);
-            document.getElementById("days").innerHTML = days;
-            
-            document.getElementById("hours").innerHTML = hours;
-        }
+        
     } while (pause == false);
 }
 
